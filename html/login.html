@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+                <ul id="menu items">
+                    <li><button class="loginbtn" oneclick="document.getElementById('login-form').style.display='block'"style="width:auto;">LOGIN</button></li>
+                </ul>
+        </nav>
+    </section>
+    <div id="login-form" class="login-page">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type='button'oneclick='login()'class='toggle-btn'> Login</button>
+                <button type="button"oneclick="register()"class="toggle-btn">Register</button>
+            </div>
+            <form id="login" class="input-group-login">
+                <input type="text" class="input-field" placeholder="Email-ID" reqired>
+                <input type="password" class="input-field" placeholder="Enter Password" reqired>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span><button type="submit" class="submit-btn">Login</button>
+            </form>
+            <form id="register" class="input-group-register">
+                <input type="text" class="input-field" placeholder="First name" required>
+                <input type="text" class="input-field" placeholder="Last name" required>
+                <input type="email" class="input-field" placeholder="Email-ID" required>
+                <input type="password" class="input-field" placeholder="Enter Password" required>
+                <input type="password" class="input-field" placeholder="Confirm password" required>
+                <input type="checkbox" class="check-box"><span>I AGREE TO THE TERMS AND CONDITIONS</span>
+                <button type="submit" class="submit-btn">REGISTER</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
